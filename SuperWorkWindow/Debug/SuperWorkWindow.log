@@ -1,0 +1,15 @@
+﻿Build started 06.04.2016 16:04:25.
+     1>Project "H:\itstep work c++\cpp_doc\SuperWorkWindow\SuperWorkWindow\SuperWorkWindow.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         H:\VisualStudio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\SuperWorkWindow.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt SuperWorkWindow.cpp
+         SuperWorkWindow.cpp
+       Link:
+         H:\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\itstep work c++\cpp_doc\SuperWorkWindow\Debug\SuperWorkWindow.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"H:\itstep work c++\cpp_doc\SuperWorkWindow\Debug\SuperWorkWindow.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\itstep work c++\cpp_doc\SuperWorkWindow\Debug\SuperWorkWindow.lib" /MACHINE:X86 Debug\SuperWorkWindow.res
+         Debug\stdafx.obj
+         Debug\SuperWorkWindow.obj
+         SuperWorkWindow.vcxproj -> H:\itstep work c++\cpp_doc\SuperWorkWindow\Debug\SuperWorkWindow.exe
+     1>Done Building Project "H:\itstep work c++\cpp_doc\SuperWorkWindow\SuperWorkWindow\SuperWorkWindow.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.68
