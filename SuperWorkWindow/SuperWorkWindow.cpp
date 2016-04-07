@@ -172,25 +172,25 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		break;
 	case WM_LBUTTONDOWN:
 		hdc = GetDC(hWnd);
-		MemoryHdc = CreateCompatibleDC(hdc);
+		//MemoryHdc = CreateCompatibleDC(hdc);
 		//формирую размер пр€моугольника исход€ из размера €чейки сетки главного окна
 		pRect.left = ix - (ix % GridStep);
 		pRect.right = ix - (ix % GridStep) + GridStep;
 		pRect.top = iy - (iy % GridStep);
 		pRect.bottom = iy - (iy % GridStep) + GridStep;
-		FillRect(MemoryHdc, &pRect, hBrush); //рисует пр€моуголник(у мен€ квадрат)
+		FillRect(hdc, &pRect, hBrush); //рисует пр€моуголник(у мен€ квадрат)
 		ReleaseDC(hWnd, hdc);
-		SendMessage(hWnd, WM_PAINT, 0, 0);
+		//SendMessage(hWnd, WM_PAINT, 0, 0);
 		break;
 	case WM_SIZE:
 		sx = LOWORD(lParam);
 		sy = HIWORD(lParam);
 		break;
 	case WM_PAINT:
-		hdc = BeginPaint(hWnd, &ps);
-		SelectObject(hdc, MemoryHdc);
-		BitBlt(hdc, 0, 0, sx, sy, MemoryHdc, 0, 0, SRCCOPY);
-		SelectObject(hdc, MemoryHdc);
+		hdc = BeginPaint(hWnd, &ps);//
+		//SelectObject(hdc, MemoryHdc);
+		//BitBlt(hdc, 0, 0, sx, sy, MemoryHdc, 0, 0, SRCCOPY);
+		//SelectObject(hdc, MemoryHdc);
 		SetMapMode(hdc, MM_ISOTROPIC);
 		SetWindowExtEx(hdc, width, -hight, NULL); //- hight - делаем нижний левый угол началом координат
 		SetViewportOrgEx(hdc, 0, 0, NULL);
